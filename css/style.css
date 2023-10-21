@@ -1,0 +1,163 @@
+body {
+    background-color: wheat;
+    color: #000000;
+    line-height: 100%;
+    font-size: 150%;
+
+}
+nav{ 
+    position: fixed;
+    width: 100%;
+    border: 2px solid whitesmoke;
+    background-color: white;
+    padding: 0px;
+}
+
+nav li{     
+    padding: 11px;
+    text-align: center;
+    width: 35%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+nav ul{
+    display:flex;
+}
+
+
+#skip {
+    text-align: underline;
+    border: solid white;
+    position: relative;
+    top: -40px
+}
+
+#skip:focus{
+    top: 100px;
+  }
+
+h1 {
+    font-size: 115%;
+    font-weight: 200;
+    text-decoration: underline;
+    text-align: center;
+    padding: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2, h3 { 
+    font-size: 115%; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 3%;
+    font-weight: bold
+    
+}
+
+.body h2{
+    text-align: center;
+    top: 40px;
+
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.body p{
+    padding: 5%;
+    line-height: 125%;
+    font-size: 87%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.mainimage{
+    width: 70%;
+    display: grid;
+    align-items: center;
+    padding: 5% 1% 5% 15%;
+}
+
+.photogallery{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.photogallery .thumbnail{
+    grid-column: 1/2;
+}
+
+ol, li {
+    list-style-type: square;
+    list-style-position: inside;
+    background-color: rgb(219, 156, 74);
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 130%;
+}
+
+
+.thumbnail {
+    border: 5px solid rgb(219, 156, 74);
+    border-radius: 15px;
+}
+
+/* this is for the travel page */
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(219, 156, 74);
+    padding: 3%
+}
+
+.body .placeimages {
+    display: grid;
+    width: 70%;
+    padding: 5% 1% 5% 15%;
+}
+
+/* this is only for pets page  */
+
+.body .petsphoto{ 
+    text-align: left;
+}
+
+.photogallery .likestitle{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.photogallery .likes {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/* This is only for the recipes page */
+.additionalfood{
+    padding: 2%;
+    width: 55%;
+}
+
+.recipebody p{
+    padding: 2%
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .mainimage{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+
+  }
