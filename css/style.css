@@ -28,7 +28,7 @@ nav ul{
 
 
 #skip {
-    text-align: underline;
+    text-decoration: underline;
     border: solid white;
     position: relative;
     top: -40px
@@ -57,11 +57,14 @@ h2, h3 {
     
 }
 
-.body h2{
+.petname {
+    background-color: whitesmoke;
+    animation-name: colorchange;
+    animation-duration: 4s;
     text-align: center;
     top: 40px;
 
-}
+  }
 
 .body{
     display: grid;
@@ -160,4 +163,16 @@ figcaption {
       transition: none;        /* sets to default setting */
      }
 
+    .petname{
+        -webkit-transition: none; /* sets to default setting */
+        transition: none;        /* sets to default setting */
+       }
+
   }
+
+  @keyframes colorchange {
+    from {background-color: whitesmoke;}
+    to {background-color: rgb(219, 156, 74);}
+  }
+  
+ 
