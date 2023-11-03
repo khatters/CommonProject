@@ -10,19 +10,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <header> <a href = "#main" id = "skip">Skip to Main Content</a> </header>
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li><a href = "index.html" > Home/Pets </a></li>
-            <li><a href = "recipe.html" > Recipes </a></li>
-            <li><a href = "travel.html" > Travel </a></li>
+            <li class="dropdown">
+                <a href="index.html" class="dropbtn">Home/Pets <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Luke">Luke</a>
+                    <a href="#Tuna">Tuna</a>
+                    <a href="#Milo">Milo</a>
+                    <a href="#Hachi">Hachi</a>
+                    <a href="#Pappy">Pappy</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="travel.html" class="dropbtn">Travel <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Yellowstone">Yellowstone</a>
+                    <a href="#Sofia">Sofia, Bulgaria</a>
+                    <a href="#Dubai">Dubai</a>
+                    <a href="#Jasper">Jasper, Canada</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="recipe.html" class="dropbtn">Recipes <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Cookie">Double Chocolate Cookies</a>
+                    <a href="#MapoTofu">Mapo Tofu</a>
+                    <a href="#Tomato">Tomato and Eggs</a>
+                    <a href="#Crunchy">Crunchwrap Supreme</a>
+                    <a href="#PestoPasta">Pesto Pasta</a>
+                </div>
+            </li>
         </ul>
     </nav>
-
     <main id = "main">
         <h1> Travel </h1>
         <div class = "body">
             
-            <h2>Yellowstone</h2>
+            <h2 id = "Yellowstone">Yellowstone</h2>
     
             <img class= "mainimage" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
             <img class= "mainimage" src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
@@ -53,7 +78,7 @@
     
         </div>
         <div class = "body">
-            <h2>Sofia, Bulgaria</h2>
+            <h2 id="Sofia">Sofia, Bulgaria</h2>
     
             <img class= "mainimage" src="images/Sofia_Bulgaria.gif" width="400" alt="Sofia, Bulgaria.">
             <img class= "mainimage" src="images/Sofia_Bulgaria.png" width = "400" alt="Sofia, Bulgaria">
@@ -93,7 +118,7 @@
             <!-- Colleen van Lent -->
         </div>
         <div class = "body">
-            <h2>Dubai</h2>
+            <h2 id="Dubai">Dubai</h2>
     
             <img class= "mainimage" src="images/dubaigif.gif" width="400" alt="Dubai">
             <img class= "mainimage" src="images/dubai_.jpg" width = "400" alt="Dubai">
@@ -134,7 +159,7 @@
             </figure>
         </div>
         <div class = "body">
-            <h2>Jasper, Canada</h2>
+            <h2 id ="Jasper">Jasper, Canada</h2>
     
             <img class= "mainimage" src="images/spirit_island_panorama.jpg" width="400" alt="Jasper, Canada">
             <img class= "mainimage" src="images/spirit_island.jpg" width = "400" alt="Jasper, Canada">

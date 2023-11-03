@@ -10,18 +10,43 @@
 <header> <a href = "#main" id = "skip">Skip to Main Content</a> </header>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li><a href = "index.html" > Home/Pets </a></li>
-            <li><a href = "recipe.html" > Recipes </a></li>
-            <li><a href = "travel.html" > Travel </a></li>
+            <li class="dropdown">
+                <a href="index.html" class="dropbtn">Home/Pets <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Luke">Luke</a>
+                    <a href="#Tuna">Tuna</a>
+                    <a href="#Milo">Milo</a>
+                    <a href="#Hachi">Hachi</a>
+                    <a href="#Pappy">Pappy</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="travel.html" class="dropbtn">Travel <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Yellowstone">Yellowstone</a>
+                    <a href="#Sofia">Sofia, Bulgaria</a>
+                    <a href="#Dubai">Dubai</a>
+                    <a href="#Jasper">Jasper, Canada</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="recipe.html" class="dropbtn">Recipes <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Cookie">Double Chocolate Cookies</a>
+                    <a href="#MapoTofu">Mapo Tofu</a>
+                    <a href="#Tomato">Tomato and Eggs</a>
+                    <a href="#Crunchy">Crunchwrap Supreme</a>
+                    <a href="#PestoPasta">Pesto Pasta</a>
+                </div>
+            </li>
         </ul>
     </nav>
-   
     <main id = "main">
     <h1> Recipes </h1>
     <div class = "recipebody">
-        <h2>Double Chocolate Cookies</h2>
+        <h2 id="Cookie">Double Chocolate Cookies</h2>
         <p>Origin: Michigan</p>
         <p>Source: Family Recipe</p>
         <p>Category: Dessert</p>
@@ -63,7 +88,7 @@
 
     </div>
     <div class = "recipebody">
-        <h2>Mapo Tofu</h2>
+        <h2 id="MapoTofu">Mapo Tofu</h2>
         <p>Origin: China </p>
         <p>Source: Family Recipe</p>
         <p>Category: Main Dish </p>
@@ -95,7 +120,7 @@
 
     </div>
     <div class = "recipebody">
-        <h2>Tomato and Eggs</h2>
+        <h2 id="Tomato">Tomato and Eggs</h2>
         <p>Origin: China </p>
         <p>Source: Family Recipe</p>
         <p>Category: Main Dish </p>
@@ -129,7 +154,7 @@
     </div>
 
     <div class = "recipebody">
-        <h2>Crunchwrap Supreme</h2>
+        <h2 id="#Crunchy">Crunchwrap Supreme</h2>
         <p>Origin: Taco Bell</p>
         <p>Source: Taco Bell Website</p>
         <p>Category: Comfort Dish </p>
@@ -166,7 +191,7 @@
     </div>
 
     <div class = "recipebody">
-        <h2>Pesto Pasta</h2>
+        <h2 id="PestoPasta">Pesto Pasta</h2>
         <p>Italian</p>
         <p>Source: Dad </p>
         <p>Category: Main Dish </p>

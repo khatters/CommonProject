@@ -6,21 +6,49 @@
     <title>Pets</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<header> <a href = "#main" id = "skip">Skip to Main Content</a> </header>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <body>
-    <nav>
+    <header> <a href = "#main" id = "skip">Skip to Main Content</a> </header>
+    <nav class="navbar">
         <ul>
-            <li><a href = "index.html" > Home/Pets </a></li>
-            <li><a href = "recipe.html" > Recipes </a></li>
-            <li><a href = "travel.html" > Travel </a></li>
+            <li class="dropdown">
+                <a href="index.html" class="dropbtn">Home/Pets <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Luke">Luke</a>
+                    <a href="#Tuna">Tuna</a>
+                    <a href="#Milo">Milo</a>
+                    <a href="#Hachi">Hachi</a>
+                    <a href="#Pappy">Pappy</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="travel.html" class="dropbtn">Travel <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Yellowstone">Yellowstone</a>
+                    <a href="#Sofia">Sofia, Bulgaria</a>
+                    <a href="#Dubai">Dubai</a>
+                    <a href="#Jasper">Jasper, Canada</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="recipe.html" class="dropbtn">Recipes <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#Cookie">Double Chocolate Cookies</a>
+                    <a href="#MapoTofu">Mapo Tofu</a>
+                    <a href="#Tomato">Tomato and Eggs</a>
+                    <a href="#Crunchy">Crunchwrap Supreme</a>
+                    <a href="#PestoPasta">Pesto Pasta</a>
+                </div>
+            </li>
         </ul>
     </nav>
+
     <main id = "main">
         <h1> Pets </h1>
         <div class = "body">
-            <h2 class = "petname">Luke </h2>
+            <h2 class = "petname" id = "Luke">Luke </h2>
             <img class= "mainimage" src="images/Luke.JPG" alt = "Luke is a white cat with long hair and brown spots." width="400">
             <p>Luke is a six-year-old white cat; he is very energetic and likes to play fetch. Luke has one brother named Jesse. Luke’s favorite thing to eat are chicken cat treats.</p>
             <p>Luke is very badly behaved. He often jumps up on furniture and drinks out of people’s water glasses. He also steals people’s jewelry and hides it in his bed. Luke knows several commands; he can sit, jump, follow, play fetch, and give people his paw.</p>
@@ -39,7 +67,7 @@
             </div>
         </div>
         <div class = "body">
-            <h2 class = "petname">Tuna</h2>
+            <h2 class = "petname" id = "Tuna">Tuna</h2>
             <img class= "mainimage" src="images/tuna.jpg" alt="a ginger cat" width="400">
             <p>Tuna isn't just any cat – they're a bundle of furry joy with a personality as unique as their name. With their sleek coat resembling the deep blue sea, Tuna is a true beauty to behold. Their eyes, like shimmering gems, reflect the curiosity
                 and affection that they're ready to share with a loving family.</p>
@@ -66,7 +94,7 @@
         </div>
 
         <div class = "body">
-            <h2 class = "petname">Milo</h2>
+            <h2 class = "petname" id = "Milo">Milo</h2>
             <img class= "mainimage" src="images/milo_main.jpeg" alt = "White schnoodle laying in grass." width="400">
             <p>Milo is a 6 year old schnoodle. He is super energetic and his favorite game is fetch, which he wants to play all the time — yes, even when it’s pitch black outside or the weather is unideal. Milo is also loving and kind, at least to humans. When he’s around other dogs, he is either jealous of the attention they’re receiving, or ignores them because he has other priorities (chasing a ball)..</p>
             <p>Milo is also a pretty smart dog, although he doesn't always use it for good. He can roll over on command, and use his sense of scent to find a hidden treat. But he’s also figured out some loopholes to get what he wants. For example, he has been trained to nudge the bell near the front door to indicate that he needs to be walked. Recently, though, he’s learned that he can just pretend like he wants to go on a walk, but instead lead us around the house to the backyard so he can play. In case it wasn’t clear: Milo loves to play. Although he can be sneaky, my family loves him more than anything. 
@@ -89,7 +117,7 @@
 
         <div>
             <div class = "body">
-            <h2 class = "petname">Hachi</h2>
+            <h2 class = "petname" id = "Hachi">Hachi</h2>
             <img class= "mainimage" src="images/hachi_onlawn.jpg" alt = "Akita named Hachi sitting on the front lawn." width="400">
             <p>Hachi is a 13 year old Akita. He’s a very old boy who likes to play in snow and run laps around our yard. He is super nice and never bites. He is timid but friendly and will always come and greet visitors with a smile and a few barks.
             </p>
@@ -112,7 +140,7 @@
 
         <div>
             <div class = "body">
-            <h2 class = "petname">Pappy</h2>
+            <h2 class = "petname" id = "Pappy">Pappy</h2>
             <img class= "mainimage" src="images/couch_pappy.jpg" alt = "Tan Morkie sitting on couch ." width="400">
             <p>Pappy is a 7 year old morkie. Most days he prefers to spend it laying around the house in his various favorite spots. Most of the time you can find him lying in his bed. He loves going with walks, but still hasn’t figured out how to approach other dogs without scaring them off. He loves his family and loves to keep intruders away even for his size.
             </p>
