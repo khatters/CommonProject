@@ -27,8 +27,7 @@ nav ul{
 }
 */
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position: static;
 }
 
 .dropbtn {
@@ -65,7 +64,7 @@ nav ul{
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: none;
 }
 
 #skip {
@@ -94,7 +93,7 @@ h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 3%;
-    font-weight: bold
+    font-weight: bold;
     
 }
 
@@ -220,10 +219,11 @@ figcaption {
 
 	.body{
 		background-color: rgb(255, 251, 245);
-    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    /* Add the following CSS for the sticky navigation bar */
+    /* Add  CSS for the sticky navigation bar */
     .navbar {
         position: sticky;
         top: 0;
@@ -254,9 +254,104 @@ figcaption {
         font-size: 80%;
 
     }
-    
-    
 
+    h2 .petname{
+        grid-column-end: span 2;
+    }
+    .mainimage{
+        width: 90%;
+        grid-column: 1;
+        align-items: justify;
+        padding: 5% 1% 5% 15%;
+    }
+
+    body p {
+        grid-column: 2;
+    }
+
+    .photogallery{
+        display:grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-around;
+        align-items: stretch;
+        grid-column: span 2;
+
+    }
+    
+    .photogallery .thumbnail{
+        grid-column: 1/2;
+    }
+    
+    .photogallery .likestitle{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .photogallery .likes {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    figcaption {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(219, 156, 74);
+        padding: 3%
+    }
+
+    .recipebody p{
+        text-align: center;
+    }
+    
+    .travel-page .body{
+        display: block;
+    }
+
+    .placeimages{
+        width: 55%;
+    }
+
+    .travel-page .mainimage{
+        width: 65%;
+    }
+
+    .recipebody li{
+        text-align: center;
+        font-size: 85%;
+        font-weight:600;
+        list-style-type:disc;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    h2.fancy-gradient {
+        font-size: 35px; 
+        background: linear-gradient(45deg, rgb(196, 53, 5), rgb(242,192,120),rgb(193,219,179),darkgreen);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% 100%;
+        animation: gradientAnimation 7s linear infinite;
+    }
 
 }
 
