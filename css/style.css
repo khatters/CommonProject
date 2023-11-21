@@ -29,10 +29,10 @@ nav ul{
 }
 
 .dropbtn {
-    font-size: 100%;
+    font-size: 125%;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(206, 252, 136);
     background-color: inherit;
     font-family: inherit;
     margin: 0;
