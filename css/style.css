@@ -1,8 +1,6 @@
 body {
     background-color: cornsilk;
     color: #000000;
-    line-height: 100%;
-    font-size: 150%;
 
 }
 /*nav{ 
@@ -31,7 +29,7 @@ nav ul{
 }
 
 .dropbtn {
-    font-size: 75%;
+    font-size: 100%;
     border: none;
     outline: none;
     color: white;
@@ -83,7 +81,7 @@ h1 {
     font-weight: 200;
     text-decoration: underline;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -92,7 +90,7 @@ h2, h3 {
     font-size: 115%; 
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     font-weight: bold;
     
 }
@@ -113,9 +111,9 @@ h2, h3 {
 }
 
 .body p{
-    padding: 5%;
-    line-height: 125%;
-    font-size: 87%;
+    padding: 2%;
+    line-height: 115%;
+    font-size: 110%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -142,9 +140,9 @@ ol, li {
     list-style-type: square;
     list-style-position: inside;
     background-color: rgb(219, 156, 74);
-    padding: 15px;
+    line-height: 150%;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 130%;
+    padding: 1%;
 }
 
 
@@ -193,21 +191,43 @@ figcaption {
     padding: 2%
 }
 
+.travelcar{
+    align-items: center;
+    display: flex;
+    margin-left: 49%;
+    font-size: 150%;
+}
+
+.caticon{
+    align-items: center;
+    display: flex;
+    margin-left: 49%;
+    font-size: 150%;
+}
+
+.recipeicon{
+    align-items: center;
+    display: flex;
+    margin-left: 49%;
+    font-size: 150%;
+}
+
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto; /* Removes scroll animation */
     }
   
-    .mainimage{
+    .mainimage.animationimage{
+        display: none;
       -webkit-transition: none; /* sets to default setting */
       transition: none;        /* sets to default setting */
      }
 
     .petname{
+        animation: none;
         -webkit-transition: none; /* sets to default setting */
         transition: none;        /* sets to default setting */
        }
-
   }
 
   @keyframes colorchange {
@@ -244,6 +264,7 @@ figcaption {
         flex-grow: 1;
         text-align: center;
         padding: 0;
+        font-size: larger;
     }
     
     .navbar a {
@@ -253,6 +274,13 @@ figcaption {
         text-align: center;
         font-size: 80%;
 
+    }
+
+    .navbar a.active {
+        /* Your unique styles for the current page link */
+        color: rgb(24, 16, 2); /* Change color to your preference */
+        font-weight: bold;
+        /* Add any other styles you want for the current page link */
     }
 
     h2 .petname{
@@ -319,6 +347,7 @@ figcaption {
         text-align: center;
         font-size: 85%;
         font-weight:600;
+        line-height: 40%;
         list-style-type:disc;
     }
 
@@ -330,30 +359,327 @@ figcaption {
     .dropdown:hover .dropdown-content {
         display: block;
     }
-
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    h2.fancy-gradient {
+}
+h2.fancy-gradient {
         font-size: 35px; 
-        background: linear-gradient(45deg, rgb(196, 53, 5), rgb(242,192,120),rgb(193,219,179),darkgreen);
+        background: linear-gradient(45deg, rgb(91, 25, 3), rgb(214, 153, 68), rgb(179, 174, 16),rgb(76, 130, 47),rgb(1, 45, 1),rgb(1, 23, 1));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         background-size: 200% 100%;
-        animation: gradientAnimation 7s linear infinite;
+        animation: gradientAnimation 4s linear infinite;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        border-radius: 5px;
     }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
+@media screen and (min-width: 1200px){
+    .navbar a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    .mainimage{
+        width: 50%;
+        padding: 5% 1% 5% 15%;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .body .placeimages{
+        width: 30%;
+        padding: 0%;
+        border: solid 3px orangered;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .body .placeimages:hover{
+        border: solid 5px rgb(50, 33, 33);
+    }
+
+    .photogallery .thumbnail:hover{
+        border: solid 5px rgb(50, 33, 33);
+    }
+    .petbody .mainimage {
+        padding: 0%;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .petbody .mainimage:hover{
+        border: solid 5px rgb(50, 33, 33);
+    }
+
+    .recipebody p{
+        padding: 1%;
+        line-height: 125%;
+        font-size: 125%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .recipebody li {
+        text-align: center;
+        font-size: 125%;
+        line-height: 5%;
+        font-weight: 100;
+        list-style-type: disc;
+    }
+
+    .recipebody .mainimage{
+        padding: 0%;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .additionalfood{
+        width: 50%;
+        padding: 0%;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .recipebody .mainimage:hover{
+        border: solid 5px rgb(50, 33, 33);
+    }
+
+    .additionalfood:hover{
+        border: solid 5px rgb(50, 33, 33);
+    } 
+    
+    .body p{
+        font-family: 'Raleway', sans-serif;
+    }
+
+    ol, li {
+        list-style-type: square;
+        list-style-position: inside;
+        background-color: rgb(219, 156, 74);
+        line-height: 150%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        padding: 1%;
+    }
+
+    .card-opening:hover {
+        transform: rotate(-10deg); 
+        transition: transform 0.3s ease;
+      }
+
+    .body.firstbody {
+        background-image: url('../images/background-image.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .body.firstbody p{
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 10px;
+        border-radius: 5px;
+    }   
+    
+    .body.firstbody figcaption {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    } 
+
+    .body.firstbody h3 {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.secondbody {
+        background-image: url('../images/sofia-background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .body.secondbody p {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 10px;
+        border-radius: 5px;
+    }   
+    
+    .body.secondbody figcaption {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.secondbody h3 {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.thirdbody {
+        background-image: url('../images/dubai-background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .body.thirdbody p {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 10px;
+        border-radius: 5px;
+    }   
+    
+    .body.thirdbody figcaption {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.thirdbody h3 {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .body.fourthbody {
+        background-image: url('../images/jasper-background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .body.fourthbody p {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 10px;
+        border-radius: 5px;
+    }   
+    
+    .body.fourthbody figcaption {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.fourthbody h3 {
+        background-color: rgba(255, 255, 255, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.firstbody h2 {
+        font-size: 200%;
+        background-color: rgba(125, 172, 97, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.secondbody h2 {
+        font-size: 200%;
+        background-color: rgba(235, 135, 42, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.thirdbody h2 {
+        font-size: 200%;
+        background-color: rgba(76, 114, 212, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .body.fourthbody h2 {
+        font-size: 200%;
+        background-color: rgba(76, 182, 212, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    h2.fancy-gradient {
+        font-size: 200%;
+        background-color: rgba(76, 182, 212, 0.9); /* fourth value for transparency */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+
+    .mainimage.card-opening {
+        transition: transform 0.3s ease;
+    }
+
+    .mainimage.card-opening:hover {
+        transform: rotate(-10deg);
+    }
+
+    .placeimages {
+        transition: border 0.3s ease;
+    }
+
+    .placeimages:hover {
+        border: solid 5px rgb(50, 33, 33);
+    }
+    .recipebody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 2%;
+    }
+
+    .recipe {
+        grid-column: span 2; 
+        font-size: 115%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 2%;
+        font-weight: bold;
+    }
+
+    .recipebody .steps {
+        grid-column: span 2; 
+        font-size: 115%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 2%;
+    }
+    .additional-images {
+        grid-column: span 2; /* Span both columns */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .additional-images h2 {
+        margin-bottom: 10px; /* Add margin to separate the header from images */
+    }
+    
+    .additional-images img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+}
+
+   
+
+
+
 
 
 

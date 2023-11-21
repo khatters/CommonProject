@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <script src="https://kit.fontawesome.com/775fed8ed9.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <header> <a href = "#main" id = "skip">Skip to Main Content</a> </header>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<body>
+<body class = "recipebigbody">
     <nav class="navbar">
         <ul>
             <li class="dropdown">
@@ -32,7 +33,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="recipe.html" class="dropbtn">Recipes <i class="fa fa-caret-down"></i></a>
+                <a href="recipe.html" class="dropbtn active">Recipes <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#Cookie">Double Chocolate Cookies</a>
                     <a href="#MapoTofu">Mapo Tofu</a>
@@ -44,17 +45,18 @@
         </ul>
     </nav>
     <main id = "main">
-    <h1> Recipes </h1>
+    <h1> Recipes </h1> <i class="fas fa-utensils recipeicon span" aria-label="Recipe Icon"></i>
+    <i class="travelicon fa-car"></i>
     <div class = "recipebody">
-        <h2  class = fancy-gradient id="Cookie">Double Chocolate Cookies</h2>
-        <p>Origin: Michigan</p>
-        <p>Source: Family Recipe</p>
-        <p>Category: Dessert</p>
+        <h2  class = 'fancy-gradient span' id="Cookie">Double Chocolate Cookies</h2>
+        <p class = "span">Origin: Michigan</p>
+        <p class = "span">Source: Family Recipe</p>
+        <p class = "span">Category: Dessert</p>
 
-        <img class= "mainimage" src="images/chocolatechip_cookie.jpeg" width = "400" alt="choclate chip cookie">
+        <img class= "mainimage card-opening span" src="images/chocolatechip_cookie.jpeg" width = "400" alt="choclate chip cookie">
         <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
-        <h3>Recipe Ingredients</h3>
-        <ul>
+        <h3 class = "recipe">Recipe Ingredients</h3>
+        <ul class = 'recipe'>
             <li>Unsalted butter</li>
             <li>Granulated Sugar</li>
             <li>Packed light or dark brown sugar</li>
@@ -68,8 +70,8 @@
             <li>Semi-sweet chocolate chunks</li>
         </ul>
 
-        <h3>Recipe Steps</h3> 
-        <ol>
+        <h3 class = "steps">Recipe Steps</h3> 
+        <ol class = "steps">
             <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
             <li>Add the egg and vanilla extract and beat well</li>
             <li>Add the melted chocolate</li>
@@ -79,24 +81,24 @@
             <li>Form 15 cookies and place on a baking sheet.</li>
             <li>Cook for 12 to 13 minutes at 350 degrees.</li>
         </ol>
-
-        <h3>Additional Food images</h3>
-        <img class = "additionalfood" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" alt="Chocolate melting in a boiler">
-        <img class = "additionalfood" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" alt="Brown sugar in three different shades of darkness">
-
+        <div class="additional-images">
+            <h3>Additional Food images</h3>
+            <img class = "additionalfood" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" alt="Chocolate melting in a boiler">
+            <img class = "additionalfood" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" alt="Brown sugar in three different shades of darkness">
+        </div>
         <!-- Colleen van Lent -->
 
     </div>
     <div class = "recipebody">
-        <h2 class = fancy-gradient id="MapoTofu">Mapo Tofu</h2>
-        <p>Origin: China </p>
-        <p>Source: Family Recipe</p>
+        <h2 class = "fancy-gradient span" id="MapoTofu">Mapo Tofu</h2>
+        <p class = "span">Origin: China </p>
+        <p class = "span">Source: Family Recipe</p>
         <p>Category: Main Dish </p>
 
-        <img class= "mainimage" src="images/mapo_tofu.jpg" width = "400" alt="Mapo Tofu in pot">
+        <img class= "mainimage card-opening span" src="images/mapo_tofu.jpg" width = "400" alt="Mapo Tofu in pot">
         <p>Need something smooth and spicy? Mapo Tofu is a simple tofu dish from Sichuan China. It's great over rice and easy to prep/save for college students! This recipe is for people who want to try authentic Chinese food but do not have Sichuan spices to use. </p>
-        <h3>Recipe Ingredients</h3>
-        <ul>
+        <h3 class = "recipe">Recipe Ingredients</h3>
+        <ul class = "recipe">
             <li>1 pack silken tofu </li>
             <li>2 green onions thinly sliced</li>
             <li>1/2 lb group pork</li>
@@ -106,18 +108,19 @@
             <li>2 tbsp cooking oil</li>
         </ul>
 
-        <h3>Recipe Steps</h3> 
-        <ol>
+        <h3 class = "steps">Recipe Steps</h3> 
+        <ol class = "steps">
             <li>Brown pork in wok with oil for 4-5 minutes </li>
             <li>Add sauce and garlic, stir fry for 2 minutes</li>
             <li>Add tofu and mix lightly as to not break up the tofu too much, until heated through</li>
             <li>Add soy sauce, green onion and dish up </li>
         </ol>
+        <div class="additional-images">
 
         <h3>Additional Food images</h3>
-        <img class = "additionalfood" src="images/ground_pork.jpeg" width = "200" alt="Browning ground pork in wok">
-        <img class = "additionalfood" src="images/add_tofu.jpeg" width = "200" alt="Adding tofu and sauce to the wok ">
-
+            <img class = "additionalfood" src="images/ground_pork.jpeg" width = "200" alt="Browning ground pork in wok">
+            <img class = "additionalfood" src="images/add_tofu.jpeg" width = "200" alt="Adding tofu and sauce to the wok ">
+        </div>
     </div>
     <div class = "recipebody">
         <h2 class = fancy-gradient id="Tomato">Tomato and Eggs</h2>
@@ -125,10 +128,10 @@
         <p>Source: Family Recipe</p>
         <p>Category: Main Dish </p>
 
-        <img class= "mainimage" src="images/tomato-egg-main-image.jpeg" width = "400" alt="Tomato and Egg on plate">
+        <img class= "mainimage card-opening" src="images/tomato-egg-main-image.jpeg" width = "400" alt="Tomato and Egg on plate">
         <p>Tomato and eggs is a hot dish which originated from China. It is a simple and fast dish to make, but it has good nutritional value. It is a very satisfying food to eat and popularly served with rice and topped with green onions. </p>
-        <h3>Recipe Ingredients</h3>
-        <ul>
+        <h3 class = "recipe">Recipe Ingredients</h3>
+        <ul class = "recipe">
             <li>Tomatoes</li>
             <li>Eggs</li>
             <li>Salt</li>
@@ -137,20 +140,20 @@
             <li>Cooking Oil</li>
         </ul>
 
-        <h3>Recipe Steps</h3> 
-        <ol>
+        <h3 class = "steps">Recipe Steps</h3> 
+        <ol class = "steps">
             <li>Crack eggs into a bowl and mix until scrambled </li>
             <li>Cut tomatoes into pieces around the size of your thumb</li>
             <li>Oil a hot pan and cook the eggs until satisfied then remove the eggs</li>
             <li>Re-oil the pan and cook the tomatoes until they loosen </li>
             <li>Combine eggs and tomatoes and season with salt and sugar </li>
         </ol>
-
-        <h3>Additional Food images</h3>
-        <img class = "additionalfood" src="images/tomato-egg-side1.jpeg" width = "200" alt="Tomato egg with rice">
-        <img class = "additionalfood" src="images/tomatoes-cooking.webp" width = "200" alt="Tomatoes cooking on a pan">
-        <img class = "additionalfood" src="images/scramble-eggs.jpeg" width = "200" alt="Scrambled eggs cooking on a pan">
-
+        <div class="additional-images">
+            <h3>Additional Food images</h3>
+            <img class = "additionalfood" src="images/tomato-egg-side1.jpeg" width = "200" alt="Tomato egg with rice">
+            <img class = "additionalfood" src="images/tomatoes-cooking.webp" width = "200" alt="Tomatoes cooking on a pan">
+            <img class = "additionalfood" src="images/scramble-eggs.jpeg" width = "200" alt="Scrambled eggs cooking on a pan">
+        </div>
     </div>
 
     <div class = "recipebody">
@@ -159,11 +162,11 @@
         <p>Source: Taco Bell Website</p>
         <p>Category: Comfort Dish </p>
 
-        <img class= "mainimage" src="images/Crunchwrap_Supreme.png" width = "400" alt="Taco Bell Crunchwrap Supreme">
+        <img class= "mainimage card-opening" src="images/Crunchwrap_Supreme.png" width = "400" alt="Taco Bell Crunchwrap Supreme">
         <p>Despite the noticeable price increase attributed to inflation, I'm an avid Taco Bell fan. There's an undeniable satisfaction in indulging in a Crunchwrap Supreme whenever hunger strikes. Fusing a traditional Mexican taco with a generously sized flattened burrito creates a symphony of flavors that resonates perfectly with my taste buds. The mere thought of it sets my stomach on a journey of anticipation, as each bite combines the comforting essence of familiar ingredients in a novel and exciting way. Yo quiero Taco Bell.
         </p>
-        <h3>Recipe Ingredients</h3>
-        <ul>
+        <h3 class = "recipe">Recipe Ingredients</h3>
+        <ul class = "recipe">
             <li>Tomatoes</li>
             <li>Tortilla</li>
             <li>Ground Beef</li>
@@ -172,8 +175,8 @@
             <li>Taco Bell Mystery Seasoning</li>
         </ul>
 
-        <h3>Recipe Steps</h3> 
-        <ol>
+        <h3 class = "steps">Recipe Steps</h3> 
+        <ol class = "steps">
             <li>Make the ground beef with taco seasoning, season it well with spices and Taco Bell spices from Target</li>
             <li>Lay the tortilla on the grill and put cheese sauce on top of it, smooth it out in a circular motion, and be generous with the amount</li>
             <li>Next, put the circular crunch taco shell on top of it while adding a generous amount of sour cream on it, don't be shy!</li>
@@ -182,11 +185,12 @@
             <li>Wrap your Crunchwrap pentagon style and then grill it on a hot pan for about 4 minutes on medium heat, both sides.</li>
             <li>Take it off the pan and then cut it in half and you have your Crunchwrap supreme.</li>
         </ol>
-
-        <h3>Additional Food images</h3>
-        <img class = "additionalfood" src="images/Taco_Bell_Beef.png" width = "200" alt="Cook the beef on high heat while adding Taco Bell seasoning and let it simmer for 10 minutes on low">
-        <img class = "additionalfood" src="images/Taco_Bell_Beef_Cheese.png" width = "200" alt="Example of the assembled Crunchwrap supreme with toppings on the tortilla">
-        <img class = "additionalfood" src="images/Crunchwrap_Supreme.png" width = "200" alt="Finished product of a Crunchwrap">
+        <div class="additional-images">
+            <h3>Additional Food images</h3>
+            <img class = "additionalfood" src="images/Taco_Bell_Beef.png" width = "200" alt="Cook the beef on high heat while adding Taco Bell seasoning and let it simmer for 10 minutes on low">
+            <img class = "additionalfood" src="images/Taco_Bell_Beef_Cheese.png" width = "200" alt="Example of the assembled Crunchwrap supreme with toppings on the tortilla">
+            <img class = "additionalfood" src="images/Crunchwrap_Supreme.png" width = "200" alt="Finished product of a Crunchwrap">
+        </div>
 
     </div>
 
@@ -196,11 +200,11 @@
         <p>Source: Dad </p>
         <p>Category: Main Dish </p>
 
-        <img class= "mainimage" src="images/pesto_pasta.jpg" width = "400" alt="Pesto Pasta">
+        <img class= "mainimage card-opening" src="images/pesto_pasta.jpg" width = "400" alt="Pesto Pasta">
         <p>Pesto pasta has always been a comfort dish for me; it’s quick, it’s easy, and great food for a dinner party or a comfy night in! It requires six main ingredients, plus additional spices as you see fit. If you’re not in the mood for pasta, you can always eat the pesto sauce on bread, crackers, or eggs! This recipe makes enough for around 4 people, so adjust accordingly.
         </p>
-        <h3>Recipe Ingredients</h3>
-        <ul>
+        <h3 class = "recipe">Recipe Ingredients</h3>
+        <ul class = "recipe">
             <li>2 cups fresh basil leaves, packed (can add some spinach if you don't have enough basil leaves)</li>
             <li>¾ cup freshly grated Parmesan or Romano cheese</li>
             <li>½ cup extra virgin olive oil</li>
@@ -209,8 +213,8 @@
             <li>8 oz of your choice of pasta (my preferred is penne, but any type will work)</li>
         </ul>
 
-        <h3>Recipe Steps</h3> 
-        <ol>
+        <h3 class = "steps">Recipe Steps</h3> 
+        <ol class = "steps">
             <li>Heat up water in a pot for the pasta and put in a teaspoon of salt. </li>
             <li>Pulse the basil and pine nuts in a food processor. Add a bit of olive oil as need be if the ingredients are too dry. </li>
             <li>Add the garlic and cheese to the food processor. </li>
@@ -219,10 +223,10 @@
             <li>Once pasta is al-dente, turn off the heat and drain the pasta water. Save some of it if you want your pesto to be slightly thinner. </li>
             <li>Add the pasta back into the pot, mix in the pesto, and voila! </li>
         </ol>
-
-        <h3>Additional Food images</h3>
-        <img class = "additionalfood" src="images/dinner_spread.JPG" width = "200px" alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle. ">
-
+        <div class="additional-images">
+            <h3>Additional Food images</h3>
+            <img class = "additionalfood" src="images/dinner_spread.JPG" width = "200px" alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle. ">
+        </div>
 
     </div>
     </main>
